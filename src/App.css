@@ -1,0 +1,63 @@
+.movie-list {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #181818; 
+}
+
+.movie-item {
+  background-color: #242424; 
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Movie poster */
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #444; 
+}
+
+
+.movie-item h2 {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+
+.movie-item p {
+  color: #ccc;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+
+.movie-item p:nth-of-type(1) {
+  font-weight: bold;
+  color: #aaa;
+}
+
+.movie-item p:nth-of-type(2) {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+.movie-item p:nth-of-type(3) {
+  color: #bbb;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
